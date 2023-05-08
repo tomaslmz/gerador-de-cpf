@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de CPF</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+</head>
+<body>
+    <script src="script.js"></script>
+    <header>
+        <h1 id="titulo">Gerador de CPF</h1>
+    </header>
+
+    <main>
+        <input type="text" name="cpf" id="cpf" disabled>
+        <br>
+
+        <div id="opcao">
+            <input type="checkbox" name="pont" id="pont">
+            <label for="compont" id="info">Adicionar pontuação</label>
+        </div>
+        <input type="button" id="botao" value="Gerar CPF" onclick="gerar()">
+
+        <h2 id="resultado"></h2>
+
+        <p id="info">Este site utiliza uma equação matemática para gerar um CPF consistente, pode ocorrer do CPF ser considerado inválido</p>
+    </main>
+
+    <footer>
+        <a href="https://replit.com/@inkma/" target="_blank"><p>@inkma</p></a>
+    </footer>
+</body>
+</html>
